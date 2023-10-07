@@ -1,13 +1,12 @@
 /* eslint-disable react/prop-types */
 export function Header() {
   return (
-    <div className="flex justify-between items-center p-3 border border-l-emerald-900">
+    <div className="flex justify-between items-center p-3 border-b-2 border-l-emerald-900">
       <Logo />
       <div className="space-x-5">
-        <a href="#">About me</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <LienHeader text="YES" />
+        <LienHeader text="About me" />
+        <LienHeader text="Skills" />
+        <LienHeader text="Projetcs" />
       </div>
       
     </div>
@@ -16,7 +15,7 @@ export function Header() {
 
 function Logo() {
 
-  return <div className="w-40 border border-red-900">
+  return <div className="w-40">
   <img src="https://i.imgur.com/dyPdz5n.png" title="source: imgur.com" />
   </div>
 }
