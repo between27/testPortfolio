@@ -22,13 +22,13 @@ const [scale, setScale] = useState("scale-0")
 const [duration, setDuration] = useState("duration-0")
 useEffect(() => {
   setTimeout(() => {
-    setDuration('duration-100')
-    setScale('scale-150')
+    setDuration(()=>'duration-100')
+    setScale(()=>'scale-125')
   }, 0);
     setTimeout(() => {
-      setDuration('duration-75')
-      setScale('scale-100')
-  }, 400);
+      setDuration(()=>'duration-100')
+      setScale(()=>'scale-100')
+  }, 200);
   }, []);
   return <div className="flex items-center justify-center space-x-5 group">
     <div>
