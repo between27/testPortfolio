@@ -1,11 +1,15 @@
 
 import './App.css'
 import { Header } from './Header'
+import { Body } from './body/Body'
+
 
 function App() {
- return <div className='min-h-screen bg-gradient-to-br from-purple-300 from-30% via-emerald-100 to-blue-600'>
-  <div className='container px-10 mx-auto relative' >
+ return <div id='app' className='bg-secondary min-h-screen'>
+  <div className='container px-20 mx-auto relative' >
+    <div className='h-5'></div>
     <Header />
+    <Body />
   </div>
   </div>
 }
