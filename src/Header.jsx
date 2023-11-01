@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useState } from "react";
+
 /* eslint-disable react/prop-types */
 export function Header() {
 
@@ -15,10 +18,21 @@ const listeDeLiens = ["About me", "Skills", "Projects"]
 }
 // #cab3d8
 function Logo() {
-
+const [scale, setScale] = useState("scale-0")
+const [duration, setDuration] = useState("duration-0")
+useEffect(() => {
+  setTimeout(() => {
+    setDuration('duration-100')
+    setScale('scale-150')
+  }, 0);
+    setTimeout(() => {
+      setDuration('duration-75')
+      setScale('scale-100')
+  }, 400);
+  }, []);
   return <div className="flex items-center justify-center space-x-5 group">
     <div>
-    <img src="/logo.svg" className="w-24 group-hover:scale-105 transition duration-300" />
+    <img src="/logo.svg" className= {`w-24 group-hover:scale-105 transition ${duration} ${scale} ease-in-out `} />
     </div>
   <p className="text-2xl uppercase font-black text-purple-100">Aboudebug</p>
   </div>
