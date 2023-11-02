@@ -32,7 +32,7 @@ useEffect(() => {
   }, []);
   return <div className="flex items-center justify-center space-x-5 group">
     <div>
-    <img src="/logo.svg" className= {`w-24 group-hover:scale-105 transition ${duration} ${scale} ease-in-out `} />
+    <img src="/logo1.svg" className= {`w-24 group-hover:scale-105 transition ${duration} ${scale} ease-in-out `} />
     </div>
   <p className="text-2xl uppercase font-black text-purple-100">Aboudebug</p>
   </div>
