@@ -42,7 +42,7 @@ const buttons = [
         <img className="rounded-full w-48 lg:w-72 border-2 border-purple-100 relative" src="/photo.jpg" />
         </div>
         </div>
-        <div className="md:mt-5 lg:mt-20">
+        <div className="md:mt-5 lg:mt-20 pb-6">
             <h1 className="text-center text-3xl font-black text-purple-100 p-2 mb-4">My contacts</h1>
             <div className='flex justify-center flex-wrap space-x-5'>
             {buttons.map((elem)=> <LinkCard logo={elem.logo} link={elem.link} key={elem.text} text={elem.text} />)}
