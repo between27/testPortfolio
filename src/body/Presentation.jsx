@@ -52,8 +52,8 @@ const buttons = [
 }
 
 function LinkCard({logo, link, text}) {
-return <a href={link} className='md:text-base text-sm p-3 bg-primary flex space-x-2 w-fit rounded-full text-purple-100'>
-    <img src={logo} />
-    <p>{text}</p>
+return <a href={link} className='md:text-base text-sm bg-primary p-3 rounded-full text-purple-100 flex items-center justify-between mt-2'>
+    <img src={logo} className="mr-2" />
+    {text}
 </a>
 }
