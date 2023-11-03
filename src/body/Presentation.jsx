@@ -34,8 +34,9 @@ const buttons = [
         <h3 className="text-xl text-purple-100">Student in Computer Science at the IUT of Metz</h3>
         </div>
         {/* right PART */}
-        <div>
-        <img className="rounded-full w-72 border-2 border-purple-100" src="/photo.jpg" />
+        <div className="relative">
+            <div className="absolute bg-primary h-96 w-48 right-0 blur-[135px]"></div>
+        <img className="rounded-full w-72 border-2 border-purple-100 relative" src="/photo.jpg" />
         </div>
         </div>
         <div className="">

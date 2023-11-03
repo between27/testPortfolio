@@ -6,7 +6,8 @@ export function Header() {
 
 const listeDeLiens = ["About me", "Skills", "Projects"]
   return (
-      <div className="w-full flex justify-between items-center p-2 bg-header rounded-lg mt-2">
+      <div className="w-full flex justify-between items-center p-2 bg-white/10 rounded-lg mt-2">
+
       <Logo />
       <div className="space-x-10 pr-5">
         {listeDeLiens.map((lien) => (
@@ -39,6 +40,6 @@ useEffect(() => {
 }
 
 function LienHeader({text}) {
-  return <a className="text-xl text-purple-100 hover:text-purple-300 hover:underline transition duration-300" href="#">{text}</a>
+  return  <a className="text-xl text-purple-100 hover:text-purple-300 hover:underline transition duration-300" href="#">{text}</a>
 }
 
