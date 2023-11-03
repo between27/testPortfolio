@@ -39,12 +39,12 @@ const buttons = [
         {/* right PART */}
         <div className="relative">
             <div className="absolute bg-primary h-96 w-48 right-0 blur-[150px]"></div>
-        <img className="rounded-full w-48 md:w-72 border-2 border-purple-100 relative" src="/photo.jpg" />
+        <img className="rounded-full w-48 lg:w-72 border-2 border-purple-100 relative" src="/photo.jpg" />
         </div>
         </div>
-        <div className="mt-20">
+        <div className="md:mt-5 lg:mt-20">
             <h1 className="text-center text-3xl font-black text-purple-100 p-2 mb-4">My contacts</h1>
-            <div className='flex justify-center space-x-5'>
+            <div className='flex justify-center flex-wrap space-x-5'>
             {buttons.map((elem)=> <LinkCard logo={elem.logo} link={elem.link} key={elem.text} text={elem.text} />)}
                 </div>
         </div>
@@ -52,7 +52,7 @@ const buttons = [
 }
 
 function LinkCard({logo, link, text}) {
-return <a href={link} className='p-3 bg-primary flex space-x-2 w-fit rounded-full text-purple-100'>
+return <a href={link} className='md:text-base text-sm p-3 bg-primary flex space-x-2 w-fit rounded-full text-purple-100'>
     <img src={logo} />
     <p>{text}</p>
 </a>
