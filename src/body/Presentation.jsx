@@ -30,16 +30,16 @@ const buttons = [
         <div  className="lg:block flex flex-col items-center text-left">
             <div>
         <h2 className="text-2xl bg-gradient-to-r text-transparent from-purple-100 to-purple-300 bg-clip-text">Hello My name is...</h2>
-        <h1  className="text-8xl text-transparent bg-gradient-to-br from-purple-100 to-primary bg-clip-text font-black">Aboubacar</h1>
-        <h1 className="text-8xl text-transparent bg-gradient-to-br from-purple-100 to-primary bg-clip-text uppercase font-black">Mamane</h1>
-        <h1 className="text-8xl text-transparent bg-gradient-to-br from-purple-100 to-primary bg-clip-text uppercase font-black">Ibrahim</h1>
+        <h1  className="md:text-8xl text-5xl text-transparent bg-gradient-to-br from-purple-100 to-primary bg-clip-text font-black">Aboubacar</h1>
+        <h1 className="md:text-8xl text-5xl text-transparent bg-gradient-to-br from-purple-100 to-primary bg-clip-text uppercase font-black">Mamane Ibrahim</h1>
+
         <h3 className="text-xl text-purple-100">Student in Computer Science at the IUT of Metz</h3>
         </div>
         </div>
         {/* right PART */}
         <div className="relative">
             <div className="absolute bg-primary h-96 w-48 right-0 blur-[150px]"></div>
-        <img className="rounded-full w-72 border-2 border-purple-100 relative" src="/photo.jpg" />
+        <img className="rounded-full w-48 md:w-72 border-2 border-purple-100 relative" src="/photo.jpg" />
         </div>
         </div>
         <div className="mt-20">
