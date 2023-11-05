@@ -29,7 +29,7 @@ const buttons = [
         {/* Left PART */}
         <div  className="lg:block flex flex-col items-center text-left">
             <div>
-        <h2 className="text-2xl bg-gradient-to-r text-transparent from-purple-100 to-purple-300 bg-clip-text">Hello My name is...</h2>
+        <h2 className="text-3xl bg-gradient-to-r text-transparent from-purple-100 to-purple-300 bg-clip-text font-black">Hello My name is...</h2>
         <h1  className="md:text-8xl text-5xl text-transparent bg-gradient-to-br from-purple-100 to-primary bg-clip-text font-black">Aboubacar</h1>
         <h1 className="md:text-8xl text-5xl text-transparent bg-gradient-to-br from-purple-100 to-primary bg-clip-text uppercase font-black">Mamane Ibrahim</h1>
 

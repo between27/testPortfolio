@@ -6,7 +6,7 @@ export function Header() {
 
 const listeDeLiens = ["About me", "Skills", "Projects"]
   return (
-      <div className="w-full flex justify-between items-center p-2 bg-white/10 rounded-lg mt-2">
+      <div className="w-full flex justify-between items-center  md:p-2 bg-white/10 rounded-lg mt-2">
       <Logo />
       <div className="space-x-10 pr-5 hidden lg:inline-block">
         {listeDeLiens.map((lien) => (
@@ -35,7 +35,7 @@ useEffect(() => {
   }, []);
   return <div className="flex items-center justify-center space-x-5 group">
     <div>
-    <img src="/logo1.svg" className= {`w-24 group-hover:scale-105 transition ${duration} ${scale} ease-in-out `} />
+    <img src="/logo1.svg" className= {`md:w-24 w-20 p-3 group-hover:scale-105 transition ${duration} ${scale} ease-in-out `} />
     </div>
   <p className="text-2xl uppercase font-black text-purple-100 hidden md:block">Aboudebug</p>
   </div>
