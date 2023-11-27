@@ -9,7 +9,8 @@ export default {
       colors: {
         primary: "#6D28D9",
           secondary : "#422B4A",
-          header: "#55415C"
+          header: "#55415C",
+          darkBg: "#25193A"
       }
     },
   },
