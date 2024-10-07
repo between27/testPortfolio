@@ -1,4 +1,9 @@
-export const Github = (props) => (
+import { SVGProps } from "react";
+import { JSX } from "react/jsx-runtime";
+
+export const Github = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -13,7 +18,9 @@ export const Github = (props) => (
   </svg>
 );
 
-export const LinkedinBox = (props) => (
+export const LinkedinBox = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -28,7 +35,7 @@ export const LinkedinBox = (props) => (
   </svg>
 );
 
-export const X = (props) => (
+export const X = (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -43,7 +50,9 @@ export const X = (props) => (
   </svg>
 );
 
-export const UserAvatarOutline = (props) => (
+export const UserAvatarOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
