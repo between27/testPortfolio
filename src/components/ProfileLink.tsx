@@ -18,7 +18,7 @@ export function ProfileLinks({
       <a
         href={link}
         className={
-          "flex flex-col items-center space-y-3 hover:scale-125 transition duration-300 " +
+          "text-slate-600 flex flex-col items-center space-y-3 hover:scale-125 transition duration-300 drop-shadow-2xl " +
           colorHover
         }
       >

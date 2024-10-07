@@ -1,3 +1,3 @@
 export function Competences() {
-  return <div>Competences</div>;
+  return <div className=" text-white">Competences</div>;
 }
