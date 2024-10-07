@@ -12,7 +12,15 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-  		colors: {}
+  		colors: {
+        primary: "#8246AF",
+        secondary: "#D4BAE8",
+        back: "#F3E5F5"
+      },
+      fontFamily:{
+        title: "Righteous",
+        content: ["Josefin Sans", "system-ui"]
+      }
   	}
   },
   plugins: [require("tailwindcss-animate")],

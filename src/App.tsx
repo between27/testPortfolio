@@ -1,12 +1,12 @@
 import "./App.css";
-import { Body } from "./body/Body";
-import { Header } from "./Header";
+import { Contacts } from "./body/Contacts";
+import { Presentation } from "./body/Presentation";
 
 function App() {
   return (
-    <div id="app" className="px-2 mx-5">
-      <Header />
-      <Body />
+    <div id="app">
+      <Presentation />
+      <Contacts />
     </div>
   );
 }
