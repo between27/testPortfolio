@@ -20,11 +20,6 @@ export function RightHero() {
 
   return (
     <div className="flex flex-col w-1/3 bg-gray-200 px-5 pt-5 rounded-br-[6rem]">
-      <nav className="mx-2 flex justify-center space-x-7 text-xl">
-        <p>Présentation</p>
-        <p>Compétences</p>
-        <p>Expériences</p>
-      </nav>
       <div className="flex items-center justify-center h-full relative">
         <div
           className={
@@ -36,9 +31,13 @@ export function RightHero() {
           src="portfolioPic.png"
           alt="image"
           className={
-            "absolute rounded-b-full w-full transition duration-500 top-36 " +
+            "absolute rounded-b-full w-[40rem] transition duration-500 top-44 drop-shadow-2xl " +
             top
           }
+        />
+        <img
+          src="flutter.png"
+          className="w-24 top-28 -rotate-45 left-24 absolute "
         />
       </div>
     </div>

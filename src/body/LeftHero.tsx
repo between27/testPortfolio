@@ -23,7 +23,7 @@ export function LeftHero() {
       colorHover: "hover:text-black",
     },
     {
-      link: "#",
+      link: "/cv_alter.pdf",
       children: <AvatarIcon />,
       text: "CV",
       colorHover: "hover:text-green-500",
@@ -98,7 +98,7 @@ export function LeftHero() {
           l'optimisation.
         </p>
       </div>
-      <div className="mt-16 mx-10 bg-slate-100 px-7 py-5 rounded-3xl flex justify-around shadow-inner border border-secondary">
+      <div className="mt-16 mx-10  px-7 py-5 rounded-3xl flex justify-around shadow-inner">
         {profilLinkFunction(buttons)}
       </div>
     </div>

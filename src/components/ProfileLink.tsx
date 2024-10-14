@@ -29,6 +29,7 @@ export function ProfileLinks({
           " " +
           opacity
         }
+        target="_blank"
       >
         {children}
         <p className="text-2xl">{text}</p>

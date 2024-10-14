@@ -18,15 +18,6 @@ import {
 } from "../assets/svgs";
 import { SkillList, SkillListType } from "../components/SkillList";
 
-export interface ResumeElementType {
-  enterprise: string; // Université ou Entreprise de stage
-  title: string; // Diplome ou titre du stage
-  place: string; // Lieu de stage ou d'étude
-  begin: string;
-  end: string;
-  tasks: string[];
-}
-
 const DATA: SkillListType[] = [
   {
     title: "Langages",
@@ -130,6 +121,9 @@ const DATA: SkillListType[] = [
         name: "Tests d'intégrations",
       },
       {
+        name: "Git flow",
+      },
+      {
         name: "ELK",
       },
     ],
@@ -148,13 +142,26 @@ const DATA: SkillListType[] = [
       },
     ],
   },
+  {
+    title: "Communication",
+    skills: [
+      {
+        name: "Français (Natif)",
+      },
+      {
+        name: "Anglais (B1)",
+      },
+    ],
+  },
 ];
 
 export function Competences() {
   return (
-    <div className="text-white px-10 py-4">
-      <h1 className="text-7xl font-bold uppercase">Compétences</h1>
-      <div className="flex space-x-10 mt-5 justify-center">
+    <div className="text-white px-10 py-4 my-8">
+      <h1 className="text-5xl font-bold uppercase bg-gradient-to-r from-teal-100 to-slate-100 text-transparent bg-clip-text">
+        Compétences
+      </h1>
+      <div className="grid grid-cols-4 gap-x-5 gap-y-4 mt-5 justify-center">
         {DATA.map((skills) => {
           return <SkillList title={skills.title} skills={skills.skills} />;
         })}
