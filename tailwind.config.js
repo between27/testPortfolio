@@ -20,6 +20,9 @@ export default {
       fontFamily:{
         title: "Righteous",
         content: ["Josefin Sans", "system-ui"]
+      },
+      rotate: {
+        "135": "135deg" 
       }
   	}
   },

@@ -157,15 +157,17 @@ const DATA: SkillListType[] = [
 
 export function Competences() {
   return (
-    <div className="text-white px-10 py-4 my-8">
+    <div className="text-white px-24 py-4 my-8">
       <h1 className="text-5xl font-bold uppercase bg-gradient-to-r from-teal-100 to-slate-100 text-transparent bg-clip-text">
         Compétences
       </h1>
-      <div className="grid grid-cols-4 gap-x-5 gap-y-4 mt-5 justify-center">
-        {DATA.map((skills) => {
-          return <SkillList title={skills.title} skills={skills.skills} />;
-        })}
-      </div>
+      <section className=" flex justify-center">
+        <div className="grid grid-cols-4 gap-x-20 gap-y-8 mt-5 justify-center">
+          {DATA.map((skills) => {
+            return <SkillList title={skills.title} skills={skills.skills} />;
+          })}
+        </div>
+      </section>
     </div>
   );
 }

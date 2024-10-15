@@ -1,6 +1,44 @@
 import { useEffect, useState } from "react";
 
 export function RightHero() {
+  const logos: FloatingLogoType[] = [
+    {
+      x: "left-24",
+      y: "top-44",
+      rotate: "-rotate-45",
+      src: "typescript",
+    },
+    {
+      src: "react",
+      x: "left-60",
+      y: "top-24",
+    },
+    {
+      src: "tailwind",
+      x: "right-24",
+      y: "top-44",
+      rotate: "rotate-45",
+    },
+    {
+      src: "mysql",
+      x: "right-24",
+      y: "bottom-52",
+      rotate: "-rotate-45",
+    },
+    {
+      src: "php",
+      x: "left-60",
+      y: "bottom-36",
+    },
+    {
+      //bottom-52 rotate-45 left-24
+      src: "git",
+      x: "left-24",
+      y: "bottom-52",
+      rotate: "rotate-45",
+    },
+  ];
+
   const [top, setTop] = useState("translate-y-10 opacity-0");
   const [scaleCircle, setScaleCircle] = useState("scale-0");
 
@@ -35,11 +73,42 @@ export function RightHero() {
             top
           }
         />
-        <img
-          src="flutter.png"
-          className="w-24 top-28 -rotate-45 left-24 absolute "
-        />
+        {logos.map((logo, index) => {
+          return (
+            <FloatingLogo
+              src={logo.src}
+              rotate={logo.rotate}
+              x={logo.x}
+              y={logo.y}
+              timeout={(index + 1) * 300}
+            />
+          );
+        })}
       </div>
     </div>
+  );
+}
+
+interface FloatingLogoType {
+  x: string;
+  y: string;
+  rotate?: string;
+  src: string;
+  timeout?: number;
+}
+
+function FloatingLogo({ x, y, rotate, src, timeout }: FloatingLogoType) {
+  const [opacity, setOpacity] = useState("opacity-0");
+  setTimeout(() => {
+    setOpacity(() => "opacity-85");
+  }, timeout);
+
+  return (
+    <img
+      src={`3d/${src}.png`}
+      className={` ${x} w-24 ${y} ${
+        rotate ? rotate : ""
+      } absolute ${opacity} transition duration-500 `}
+    />
   );
 }
