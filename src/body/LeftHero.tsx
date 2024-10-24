@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GithubIcon, LinkedinIcon, XIcon, AvatarIcon } from "../assets/svgs";
+import { GithubIcon, LinkedinIcon, AvatarIcon } from "../assets/svgs";
 import { ProfileLinkType, ProfileLinks } from "../components/ProfileLink";
 
 export function LeftHero() {
