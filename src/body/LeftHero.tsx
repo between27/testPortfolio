@@ -17,13 +17,13 @@ export function LeftHero() {
       colorHover: "hover:text-blue-500",
     },
     {
-      link: "https://twitter.com/aboudebug",
-      children: <XIcon />,
-      text: "Twitter",
-      colorHover: "hover:text-black",
+      link: "/cv_alter.pdf",
+      children: <AvatarIcon />,
+      text: "CV (alternance)",
+      colorHover: "hover:text-green-500",
     },
     {
-      link: "/cv_alter.pdf",
+      link: "/cv_job.pdf",
       children: <AvatarIcon />,
       text: "CV",
       colorHover: "hover:text-green-500",
@@ -66,10 +66,10 @@ export function LeftHero() {
           ABOUDEBUG
         </p>
       </nav>
-      <div className="mt-20 space-y-10">
+      <div className="mt-10 2xl:mt-20 2xl:space-y-10 space-y-7">
         <h1
           className={
-            "lg:text-7xl font-bold text-gray-700 transition duration-1000 " +
+            "2xl:text-7xl xl:text-6xl md:text-5xl font-bold text-gray-700 transition duration-1000 " +
             logoShow
           }
         >
@@ -77,7 +77,7 @@ export function LeftHero() {
         </h1>
         <h2
           className={
-            "lg:text-6xl text-gray-600 font-bold transition duration-1000 " +
+            "2xl:text-6xl xl:text-5xl md:text-4xl text-gray-600 font-bold transition duration-1000 " +
             logoShow
           }
         >
@@ -85,7 +85,7 @@ export function LeftHero() {
         </h2>
         <p
           className={
-            "w-2/3 text-justify text-lg text-gray-700 font-semibold transition duration-1000 " +
+            "w-2/3 text-justify xl:text-lg text-base text-gray-700 font-semibold transition duration-1000 " +
             descriptionShow
           }
         >
@@ -98,7 +98,7 @@ export function LeftHero() {
           l'optimisation.
         </p>
       </div>
-      <div className="mt-16 mx-10  px-7 py-5 rounded-3xl flex justify-around shadow-inner">
+      <div className="2xl:mt-16 xl:mt-8 mx-10 px-7 2xl:py-5 py-3 rounded-3xl flex justify-around shadow-inner">
         {profilLinkFunction(buttons)}
       </div>
     </div>
