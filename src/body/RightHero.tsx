@@ -89,7 +89,7 @@ function FloatingLogo({ translate, rotate, src, timeout }: FloatingLogoType) {
   return (
     <img
       src={`3d/${src}.png`}
-      className={` ${translate} 2xl:w-24 w-20 ${
+      className={` ${translate} 2xl:w-24 w-20 hover:scale-105 ${
         rotate ? rotate : ""
       } ${opacity} transition duration-500 `}
     />

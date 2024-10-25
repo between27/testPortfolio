@@ -89,13 +89,12 @@ export function LeftHero() {
             descriptionShow
           }
         >
-          Il y a deux ans, après cinq ans en chimie marqués par un burnout, j'ai
-          choisi de me réorienter vers le développement web et mobile,
-          découvrant ainsi une nouvelle passion. J'ai depuis acquis des
-          compétences solides et réalisé divers projets, développant une
-          maîtrise complète du cycle de développement, de la conception à la
-          mise en production, avec un souci constant du détail et de
-          l'optimisation.
+          Il y a deux ans, après cinq ans en chimie, j'ai choisi de me
+          réorienter vers le développement web et mobile, découvrant ainsi une
+          nouvelle passion. J'ai depuis acquis des compétences solides et
+          réalisé divers projets, développant une maîtrise complète du cycle de
+          développement, de la conception à la mise en production, avec un souci
+          constant du détail et de l'optimisation.
         </p>
       </div>
       <div className="2xl:mt-16 xl:mt-8 mx-10 px-7 2xl:py-5 py-3 rounded-3xl flex justify-around shadow-inner">
