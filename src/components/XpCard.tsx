@@ -7,6 +7,7 @@ export interface ResumeElementType {
   place: string; // Lieu de stage ou d'étude
   begin: string;
   end: string;
+  technos?: Array<string>;
   tasks?: string[]; //Taches pour les stages
 }
 
@@ -18,6 +19,7 @@ export function XpCard({
   end,
   tasks,
   imageUrl,
+  technos,
 }: ResumeElementType) {
   return (
     <div className="flex justify-between">
@@ -30,6 +32,18 @@ export function XpCard({
         </div>
         <div className="">
           <h1 className=" font-bold text-2xl">{title}</h1>
+          {technos && (
+            <div className="flex m-1 space-x-1">
+              {technos.map((str) => {
+                return (
+                  <p className="bg-black text-white px-2 text-sm rounded-lg">
+                    {str}
+                  </p>
+                );
+              })}
+            </div>
+          )}
+
           <p className="text-lg font-semibold">
             {enterprise} | {place}
           </p>

@@ -13,6 +13,7 @@ const experiences: ResumeElementType[] = [
       "Ajouter de nouvelles fonctionnalités pour répondre aux besoins des utilisateurs",
       "Assurer le déploiement continu des mises à jour stables.",
     ],
+    technos: ["Typescript", "React Native", "Detox", "Firebase"],
   },
   {
     title: "Stagiaire Dévéloppeur Web E-Commerce engineer",
@@ -25,6 +26,7 @@ const experiences: ResumeElementType[] = [
       "Mise en place de sites de réservation de chambres d'hotel avec le plugin Motopress",
       "Adaption responsive sur plusieurs plateforme",
     ],
+    technos: ["Wordpress", "Html", "CSS"],
   },
 ];
 const formations: ResumeElementType[] = [
@@ -98,6 +100,7 @@ function ExperienceComponent({
               end={experience.end}
               imageUrl={experience.imageUrl}
               tasks={experience.tasks}
+              technos={experience.technos}
             />
           );
         })}
