@@ -8,7 +8,8 @@ export function RightHero() {
     },
     {
       src: "react",
-      translate: "2xl:-translate-y-12 -translate-y-6",
+      translate:
+        "2xl:-translate-y-12 xl:-translate-y-6 md:-translate-y-8 -translate-y-4 ",
     },
     {
       src: "tailwind",
@@ -22,7 +23,8 @@ export function RightHero() {
     },
     {
       src: "php",
-      translate: "2xl:translate-y-12 translate-y-6",
+      translate:
+        "2xl:translate-y-12 xl:translate-y-6 md:translate-y-8 translate-y-4",
     },
     {
       //bottom-52 rotate-45 left-24
@@ -49,12 +51,12 @@ export function RightHero() {
   }, 1000);
 
   return (
-    <div className="flex flex-col w-1/3 bg-gray-200 px-5 pt-5 rounded-br-[6rem]">
+    <div className="flex flex-col md:w-1/3 w-full py-10 md:py-0 bg-gray-200 px-5 pt-5 md:rounded-br-[6rem]">
       <div className="flex-col flex items-center justify-center h-full relative">
         <FloatingLogoList logoList={logos1} />
         <div
           className={
-            " flex 2xl:w-96 2xl:h-96 w-80 h-80 p-4 m-4 rounded-full bg-secondary/30 transition duration-600 " +
+            " flex 2xl:w-96 2xl:h-96 xl:w-80 xl:h-80 lg:w-60 lg:h-60 w-52 h-52  p-4 m-4 rounded-full bg-secondary/30 transition duration-600 " +
             scaleCircle
           }
         >
@@ -62,7 +64,7 @@ export function RightHero() {
             src="portfolioPic.png"
             alt="image"
             className={
-              "absolute rounded-b-full scale-125 transition duration-500 drop-shadow-2xl " +
+              "absolute rounded-b-full xl:scale-125 lg:scale-125 scale-150 transition duration-500 drop-shadow-2xl " +
               top
             }
           />
@@ -89,7 +91,7 @@ function FloatingLogo({ translate, rotate, src, timeout }: FloatingLogoType) {
   return (
     <img
       src={`3d/${src}.png`}
-      className={` ${translate} 2xl:w-24 w-20 hover:scale-105 ${
+      className={` ${translate} 2xl:w-24 xl:w-20 lg:w-16 w-12 hover:scale-105 ${
         rotate ? rotate : ""
       } ${opacity} transition duration-500 `}
     />
@@ -102,7 +104,7 @@ interface FloatingLogoListType {
 
 function FloatingLogoList({ logoList }: FloatingLogoListType) {
   return (
-    <div className="flex 2xl:space-x-5 space-x-9 ">
+    <div className="flex 2xl:space-x-5 space-x-9 md:py-0 py-3 ">
       {logoList.map((logo, index) => {
         return (
           <FloatingLogo

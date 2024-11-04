@@ -32,7 +32,7 @@ export function ProfileLinks({
         target="_blank"
       >
         {children}
-        <p className="text-2xl">{text}</p>
+        <p className="xl:text-2xl lg:text-lg text-xs">{text}</p>
       </a>
     </>
   );

@@ -4,7 +4,7 @@ import { LeftHero } from "./LeftHero";
 export function Presentation() {
   return (
     <>
-      <div className="min-h-screen flex">
+      <div className="md:min-h-screen md:flex block">
         <LeftHero />
         <RightHero />
       </div>
