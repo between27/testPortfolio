@@ -103,7 +103,7 @@ export function LeftHero() {
           </p>
         </div>
       </div>
-      <div className="2xl:mt-16 xl:mt-8 mt-6 mx-10 lg:px-7 2xl:py-5 py-3 rounded-3xl flex justify-around shadow-inner lg:space-x-0 space-x-6">
+      <div className="2xl:mt-16 xl:mt-8 mt-6 mx-10 lg:px-7 2xl:py-5 py-3 rounded-3xl flex justify-around shadow-inner lg:space-x-0 md:space-x-6 ">
         {profilLinkFunction(buttons)}
       </div>
     </div>

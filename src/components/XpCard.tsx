@@ -27,16 +27,16 @@ export function XpCard({
         <div>
           <img
             src={imageUrl}
-            className=" rounded-full w-14 h-14 object-cover"
+            className=" rounded-full lg:w-14 lg:h-14 w-12 h-12 object-cover"
           />
         </div>
         <div className="">
-          <h1 className=" font-bold text-2xl">{title}</h1>
+          <h1 className=" font-bold lg:text-2xl text-lg">{title}</h1>
           {technos && (
             <div className="flex m-1 space-x-1">
               {technos.map((str) => {
                 return (
-                  <p className="bg-black text-white px-2 text-sm rounded-lg">
+                  <p className="bg-black text-white px-2 text-xs rounded-lg">
                     {str}
                   </p>
                 );
@@ -44,14 +44,14 @@ export function XpCard({
             </div>
           )}
 
-          <p className="text-lg font-semibold">
+          <p className="md:text-lg text-sm font-semibold">
             {enterprise} | {place}
           </p>
           {tasks && (
             <ul>
               {tasks.map((task) => {
                 return (
-                  <li className="flex items-center space-y-1 ml-3">
+                  <li className="flex items-center text-sm space-y-1 ml-3">
                     <span>
                       <IconDot />
                     </span>
@@ -63,7 +63,7 @@ export function XpCard({
           )}
         </div>
       </div>
-      <p className=" font-semibold">
+      <p className="text-sm font-semibold">
         {begin} - {end}
       </p>
     </div>
