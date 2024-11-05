@@ -62,12 +62,12 @@ export function Formation() {
       <ExperienceComponent
         title="Expériences"
         experiences={experiences}
-        rounded="rounded-t-[6rem] pt-10"
+        rounded="md:rounded-t-[6rem] md:pt-10 pt-2"
       />
       <ExperienceComponent
         title="Formations"
         experiences={formations}
-        rounded="rounded-b-[6rem] py-10"
+        rounded="md:rounded-b-[6rem] md:py-10 py-2"
       />
     </div>
   );

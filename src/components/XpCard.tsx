@@ -32,11 +32,14 @@ export function XpCard({
         </div>
         <div className="">
           <h1 className=" font-bold lg:text-2xl text-lg">{title}</h1>
+          <p className="text-sm font-semibold md:hidden block">
+            {begin} - {end}
+          </p>
           {technos && (
             <div className="flex m-1 space-x-1">
               {technos.map((str) => {
                 return (
-                  <p className="bg-black text-white px-2 text-xs rounded-lg">
+                  <p className="bg-black text-white px-2 text-xs rounded-lg flex items-center justify-center">
                     {str}
                   </p>
                 );
@@ -63,7 +66,7 @@ export function XpCard({
           )}
         </div>
       </div>
-      <p className="text-sm font-semibold">
+      <p className="text-sm font-semibold hidden md:block">
         {begin} - {end}
       </p>
     </div>
