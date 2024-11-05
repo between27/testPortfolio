@@ -85,7 +85,7 @@ function ExperienceComponent({
   rounded,
 }: ExperienceComponentType) {
   return (
-    <div className={" bg-purple-50 px-24 " + rounded}>
+    <div className={" bg-purple-50 md:px-24 px-7 " + rounded}>
       <h1 className=" mt-7 lg:text-5xl md:text-4xl text-3xl font-bold uppercase bg-gradient-to-r text-transparent from-slate-500 to-gray-800 bg-clip-text">
         {title}
       </h1>
