@@ -27,7 +27,7 @@ export function XpCard({
         <div>
           <img
             src={imageUrl}
-            className=" rounded-full lg:w-14 lg:h-14 w-12 h-12 object-cover"
+            className="rounded-full w-14 h-14 object-cover object-center"
           />
         </div>
         <div className="">
