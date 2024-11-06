@@ -58,7 +58,7 @@ const formations: ResumeElementType[] = [
 
 export function Formation() {
   return (
-    <div className="bg-back">
+    <div className="">
       <ExperienceComponent
         title="Expériences"
         experiences={experiences}
