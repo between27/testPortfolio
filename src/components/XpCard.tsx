@@ -39,7 +39,7 @@ export function XpCard({
             <div className="flex m-1 space-x-1">
               {technos.map((str) => {
                 return (
-                  <p className="bg-black text-white px-2 text-xs rounded-lg flex items-center justify-center">
+                  <p className="bg-gray-800 text-white px-2 py-1 md:text-sm text-xs rounded-lg flex items-center justify-center">
                     {str}
                   </p>
                 );
