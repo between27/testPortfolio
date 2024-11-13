@@ -18,15 +18,15 @@ export default function ProjectCard({
   title,
 }: ProjectCardInterface) {
   return (
-    <div className=" text-gray-50 w-80 rounded-xl hover:shadow-2xl hover:shadow-gray-700 transition duration-300">
+    <div className=" text-gray-50 xl:w-80 lg:w-60 rounded-xl hover:shadow-2xl hover:shadow-gray-700 transition duration-300 hover:scale-105">
       <div className="p-2 bg-back rounded-t-xl">
         <img
           src={`projects/${uri ? uri : "cs"}.jpg`}
           alt=""
-          className=" w-full object-top object-cover h-56 max-h-56 rounded-t-xl"
+          className=" w-full xl:object-top object-cover xl:h-56 xl:max-h-56 h-44 max-h-44 rounded-t-xl"
         />
       </div>
-      <div className="px-3 pb-3  rounded-b-xl h-72 flex flex-col justify-between border border-white bg-gray-950">
+      <div className="px-3 pb-3  rounded-b-xl xl:h-72 h-60 flex flex-col justify-between border border-white bg-gray-950">
         <article>
           <h1 className=" font-bold text-2xl mb-3">{title}</h1>
           <p className=" text-justify">{description}</p>

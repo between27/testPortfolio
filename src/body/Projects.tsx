@@ -43,6 +43,7 @@ const applications: ProjectCardInterface[] = [
 ];
 
 export default function Projects() {
+  let className = "grid xl:grid-cols-3 lg:gap-y-6 lg:grid-cols-2 grid-cols-1 md:gap-3 gap-y-3 place-items-center"
   return (
     <div className="text-white md:px-24 mx-10 py-4 my-8 ">
       <h1 className="lg:text-5xl text-3xl font-bold uppercase bg-gradient-to-r from-teal-100 to-slate-100 text-transparent bg-clip-text">
@@ -51,7 +52,7 @@ export default function Projects() {
       <h2 className="lg:text-4xl text-2xl py-3 ml-4 font-bold uppercase bg-gradient-to-r from-teal-100 to-slate-100 text-transparent bg-clip-text">
         Applications
       </h2>
-      <div className="grid grid-cols-3 place-items-center">
+      <div className={className}>
         {applications.map((card) => {
           return (
             <ProjectCard
@@ -68,7 +69,7 @@ export default function Projects() {
       <h2 className="lg:text-4xl text-2xl py-3 ml-4 font-bold uppercase bg-gradient-to-r from-teal-100 to-slate-100 text-transparent bg-clip-text">
         Landing Pages
       </h2>
-      <div className="grid grid-cols-3 place-items-center">
+      <div className={className}>
         {landingPages.map((card) => {
           return (
             <ProjectCard
