@@ -18,7 +18,7 @@ export default function ProjectCard({
   title,
 }: ProjectCardInterface) {
   return (
-    <div className=" text-gray-50 xl:w-80 lg:w-60 rounded-xl hover:shadow-2xl hover:shadow-gray-700 transition duration-300 hover:scale-105">
+    <div className=" text-gray-50 xl:w-80 lg:w-60 rounded-xl md:hover:shadow-2xl  md:hover:shadow-gray-700 transition duration-300 md:hover:scale-105">
       <div className="p-2 bg-back rounded-t-xl">
         <img
           src={`projects/${uri ? uri : "cs"}.jpg`}
