@@ -16,18 +16,6 @@ export function LeftHero() {
       text: "Linkedin",
       colorHover: "hover:text-blue-500",
     },
-    {
-      link: "/cv_alter.pdf",
-      children: <AvatarIcon />,
-      text: "CV (alternance)",
-      colorHover: "hover:text-green-500",
-    },
-    {
-      link: "/cv_job.pdf",
-      children: <AvatarIcon />,
-      text: "CV",
-      colorHover: "hover:text-green-500",
-    },
   ];
 
   const [logoShow, setlogoShow] = useState("-translate-x-10 opacity-0");
